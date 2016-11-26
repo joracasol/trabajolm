@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 h1 {
 	text-align: center;
 	font-size: 3em;
@@ -7,9 +6,9 @@ h1 {
 	font-size: 1.75em;
 	font-weight: bold;
 	}
-.monospace {
+.texto {
 	font-size: 1.25em;
-	font-family: "Courier New", Courier, monospace;
+	font-family: Verdana, Geneva, sans-serif;
 }
 .azul	{
 	font-size: 1.25em;
@@ -19,26 +18,5 @@ h1 {
 
 .subtipo{
 	font-size: 1.50em;
-	
-=======
-h1 {
-	text-align: center;
-	font-size: 3em;
-}
-.subtitulo	{
-	font-size: 1.75em;
 	font-weight: bold;
-	}
-.monospace {
-	font-size: 1.25em;
-	font-family: "Courier New", Courier, monospace;
-}
-.azul	{
-	font-size: 1.25em;
-	font-family: "Courier New", Courier, monospace;
-	color: rgb(0,153,204);
-}
-.subtipo{
-	font-size: 1.50em;
 	
->>>>>>> ff7761f55baa8b5c4b997aaa009daba25edf8e78
