@@ -9,52 +9,58 @@
 
 <body>
 <p>
-<h1>Hiperenlace</h1>
+<h1>Contenido encajado</h1>
 </p>
 <ul>
-  <article>
-    <li class="subtitulo">Hiperenlace interno</li>
-    <span class="texto">Se realiza dentro de la misma página.<br>
-    Primero se realiza un identificador del elemento:</span><br>
-    <span class="azul">&lt;a id=elementoX&gt;Elemento X&lt;/elemento&gt;</span><br>
-    <span class="texto">A continuación se realiza un enlace a ese elemento y haciendo click nos lleva a esa parte de la página:</span><br>
-    <span class="azul">&lt;a href=#elementoX&gt;Elemento X&lt;/a&gt;</span><br>
-    <span class="texto">Para subir a la parte de arriba de la página se le da click y ya nos sube:</span><br>
-    <span class="azul">&lt;a href=#top&gt;Ir arriba&lt;/a&gt;</span></article>
-  <li class="subtitulo">Hiperenlace absoluto</li>
-  <span class="texto">Conduce a una ubicación externa al sitio en el que se encuentra el documento. La ubicación es en Internet, en este caso hay que empezar la referencia por http:// el nombre del dominio y algunas veces el nombre de la página. Si no se escribe el nombre de la página se cargará la página de inicio asociada al dominio.<br>
-  Se realiza así:</span><br>
-  <span class="azul"> &lt;a href="http://www.google.es""&gt;"Visita Google"&lt;/a&gt;</span>
-  <li class="subtitulo">Hiperenlace relativo</li>
-  <span class="texto">Conduce a un documento situado dentro del mismo sitio que el documento actual. Un sitio web es un conjunto de archivos y carpetas, relacionados entre sí, con un diseño similar o un objetivo común, estando todos ellos dentro de una misma carpeta, conocida como carpeta raíz del sitio.</span><br>
-  <ul>
-    <li class="texto">Si es en el mismo directorio (directorio raiz) sería así:</li>
-    <span class="azul"> &lt;a href= "pagina.html"&gt;"Enlace página en el directorio raiz"&lt;/a&gt;</span>
-    <li class="texto">Si es un subdirectorio (dentro del directorio raiz si no no funciona) sería así:</li>
-    <span class="azul"> &lt;a href= "subdirectorio/pagina.html"&gt;"Enlace página en el directorio raiz"&lt;/a&gt;</span>
-    <li class="texto">Si es un directorio anterior sería así:</li>
-    <span class="azul"> &lt;a href= "../pagina.html"&gt;"Enlace página en el directorio raiz"&lt;/a&gt;</span>
-  </ul>
-  <li class="subtitulo">Hiperenlaces en imagenes</li>
-  <span class="texto">Se pueden realizar hiperenlaces en imágenes para ello hay que poner esta estructura:</span><br>
-  <span class="azul"> &lt;a href= "http://www.google.es"&gt;&lt;img</a> src="imagen.jpg" alt="google" /&gt;&lt;/a&gt;</span><br>
-  <li class="subtitulo">Atributos de los hiperenlaces</li>
-  <span class="texto"><b>Target</b> Los valores de target mas habituales son:</span><br>
-  <ul>
-    <li class="texto"> _blank abre el documento vinculado en una ventana nueva del navegador. También se puede usar _new.<br>
-      Aquí les pongo la estructura:</li>
-    <span class="azul"> &lt;a href= "http://www.google.es" target=&quot;_blank&quot;&gt;"Enlace a google en pestaña nueva del navegador"&lt;/a&gt;<br>
-    &lt;a href= "http://www.google.es" target=-&quot;_new&quot;&gt;"Enlace a google en pestaña nueva del navegador"&lt;/a&gt; </span>
-    <li class="texto">_self es la opción predeterminada o por defecto. Abre el documento vinculado en el mismo marco o ventana que el vínculo.(Es como si no pusieramos nada)<br>
-      Aquí les pongo la estructura:</li>
-    <span class="azul"> &lt;a href= "http://www.google.es" target="_self"&gt;"Enlace a la página de google en la misma pestaña"&lt;/a&gt;</span>
-  </ul>
-  <span class="texto"><b>Title </b> sirve para ponerles enlace a nuestros links:</span><br>
-  <span class="azul"> &lt;a href= "http://www.google.es" title= &quot;Enlace google&quot;&gt;"Enlace a la página de google"&lt;/a&gt;</span>
-</ul>
+  
+    <li class="subtitulo">Imágenes</li>
+    <span class="texto">Para insertar imágenes en un sitio usaremos la etiqueta &lt;img&gt;.
+    <br>
+    Esta etiqueta debe ir acompañada del atributo src que es el que contiene el URL de la ubicación del archivo de la imagen.
+    <br>
+    El atributo alt se utiliza para dar una breve descripción de la imagen, la cual podremos observar en caso que el navegador del usuario, por alguna razón, no muestre la misma.<br>
+     La etiqueta &lt;img&gt; no tiene cierre y quedaría así.:</span><br>
+    <span class="azul">&lt;img src="enlaceimagen.jpg" alt="texto descriptivo"&gt;</span><br>
+    <span class="texto">Con lo anterior tendríamos la imagen colocada con el tamaño que teníamos por defecto. Para acotarla a un tamaño hay que poner width (anchura) y height (altura) seguido de un = y los pixeles que queremos que tenga la imagen. Un ejemplo claro es este:</span><br>
+    <span class="azul">&lt;
+    img src="imagen.jpg" width=200 height=150 alt=“imagen”&gt;</span><br>
+    <span class="texto">Hay distintos tipos de imágenes:</span><br>
+     <ul>
+    <li class="texto">Bitmaps estáticos con y sin pérdida: </li> 
+    <span class="azul">gif, png y jpg<br>
+     </span>
+     <span class="texto">Aquí un ejemplo de gif:</span><br>
+     <img src= "googlesa.gif" alt="imagen gif"><br>
+     <span class="texto">Aquí un ejemplo de png:</span><br>
+      <img src= "googlesa.png" alt="imagen png"><br>
+     
+     <span class="texto">Aquí un ejemplo de jpg:</span><br>
+     <img src= "google.jpg" alt="imagen jpg"><br>
+    <li class="texto">Documentos vectoriales:</li>
+    <span class="azul">svg</span><br>
+<span class="texto">Aquí un ejemplo de svg (por mas que lo amplias no se pixela:</span><br>
+     <img src= "img.svg" alt="imagen svg"><br>
+    <li class="texto">Animados:</li>
+     <span class="azul">apng, gif</span><br>
+     <span class="texto">Aquí un ejemplo de apng (En Google Chrome no se ve en firefox sí se ve):</span><br>
+      <img src= "googlean.png" alt="imagen jpng animada"><br>
+     <span class="texto">Aquí un ejemplo de gif animado:</span><br>    
+     <img src= "googlean.gif" alt="imagen gif animada"><br>
+<li class="texto">Otros:</li>
+     <span class="azul">pdf,mng</span><br>
+     <span class="texto">Aquí un ejemplo de pdf. Para insertarlo no es como una imagen hay que seguir esta estructura:</span><br>
+      <span class="azul">&lt;embed src= &quot;archivo.pdf&quot; alt=&quot;archivo pdf&quot;&gt;</span><br>
+	 <embed src= "img.pdf" alt="archivo pdf" width="430px" height="215px"><br>
+    </ul>
+  
+ 
 </ul>
 </article>
 </ul>
-<footer><a href="pagina5.html" title="pagina5" class="siguiente" ><img src="siguiente.svg" align="right"></a></footer>
+<footer>
+  <a href="pagina5.html" title="ir a la pagina anterior"><img src="anterior.svg" alt="ir a la página anterior" class="anterior">
+  <a href="index.html" title="ir al indice"><img src="indice.svg" alt="ir al indice" class="centro">
+  <a href="pagina7.html" title="ir a la pagina siguiente"><img src="siguiente.svg" alt="ir a la página siguiente" class="siguiente">
+</footer>
 </body>
 </html>

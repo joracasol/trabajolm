@@ -31,3 +31,36 @@ h1 {
 	font-size: 1.50em;
 	font-weight: bold;
 	}
+.siguiente {
+	float:right;
+}
+.siguiente:hover{
+	-webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+	}
+.anterior {
+	float:left;
+}
+.anterior:hover{
+	-webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+.centro {
+	float:left;
+	margin-right:-40%;
+	margin-left:40%;
+}
+.centro:hover{
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+	
+	
+.move {-webkit-animation: anim2 ease-in-out 3s infinite alternate;
+float:left; }
+@-webkit-keyframes anim2
+{
+   from {left: 0px;   -webkit-transform: scale(1.0) rotate(0deg)   }
+   50%  {left: 250px; -webkit-transform: scale(0.8) rotate(10deg)  }
+   to   {left: 500px; -webkit-transform: scale(1.2) rotate(-20deg) }
+}
