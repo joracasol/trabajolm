@@ -1,32 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Monserrat|Indie+Flower|Open+Sans');
-
 body {
 	background-image:url(imagen.jpg);
 		
 }
-h1 {
-	font-family: 'Montserrat', sans-serif;
+tit {
 	text-align: center;
-	font-size: 4em;
+	font-size: 5em;
 	
 }
-.script		{
-	font-family: 'Indie Flower', cursive;
-	font-size: 2em;
-	float:right;
-	}
 .subtitulo	{
-	font-family: 'Open Sans', sans-serif;
 	font-size: 1.75em;
 	font-weight: bold;
 	}
 .texto {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25em;
 	font-family: Verdana, Geneva, sans-serif;
 }
 .texto1 {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-family: Verdana, Geneva, sans-serif;
 }
@@ -67,10 +56,8 @@ h1 {
 }
 
 	
-.move{
-	float:left;
-}
-.move:hover {-webkit-animation: anim2 ease-in-out 3s infinite alternate;
+	
+.move {-webkit-animation: anim2 ease-in-out 3s infinite alternate;
 float:left; }
 @-webkit-keyframes anim2
 {
@@ -78,13 +65,3 @@ float:left; }
    50%  {left: 250px; -webkit-transform: scale(0.8) rotate(10deg)  }
    to   {left: 500px; -webkit-transform: scale(1.2) rotate(-20deg) }
 }
-a		{
-	font-family: 'Indie Flower', cursive;
-	font-size: 2em;
-	color:rgb(0,0,0);
-	}
-	
-a:hover{
-	color:rgb(153,153,153);
-}
-

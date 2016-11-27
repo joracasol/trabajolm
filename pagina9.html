@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Pagina 9</title>
+<meta charset="utf-8">
+<meta name="author" content="Jose Casado">
+<link type="text/css" rel="stylesheet" href="hojaestilojosecasado.css">
+</head>
+
+<body>
+<header> <span class="script">Jose Ramón Casado Solana</span> <a href="http://www.iessantiagohernandez.com/" title="Ir a la página del IES"><img src="logo-final.jpg" alt="Ir a la página del IES" class="move"> </a> </header>
+<br>
+<br>
+<br>
+<p>
+<h1>Tablas</h1>
+</p>
+<span class="texto">Las tablas están compuestas de filas y de columnas para verlo más claro todo lo vamos a ver sobre un ejemplo de una tabla de dos filas por tres columnas:</span><br>
+<span class="azul">&lt;table border=&quot;2px&quot;&gt;</span><span class="texto1">Aquí se declara la tabla con la etiqueta table, lo que viene a continuación del border es el grosor del borde de la tabla.</span><br>
+<span class="azul">&lt;tr&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aquí comenzamos con la primera fila</span><br>
+<span class="azul">&lt;td&gt;</span><span class="texto1">Celda1</span><span class="azul">&lt;/td&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí tenemos la primera celda de la primera columna.</span><br>
+<span class="azul">&lt;td&gt;</span><span class="texto1">Celda2</span><span class="azul">&lt;/td&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí tenemos la primera celda de la segunda columna.</span><br>
+<span class="azul">&lt;td&gt;</span><span class="texto1">Celda3</span><span class="azul">&lt;/td&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí tenemos la primera celda de la tercera columna.</span><br>
+<span class="azul">&lt;/tr&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí finalizamos la primera fila</span><br>
+<span class="azul">&lt;tr&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aquí comenzamos con la segunda fila</span><br>
+<span class="azul">&lt;td&gt;</span><span class="texto1">Celda1</span><span class="azul">&lt;/td&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí tenemos la segunda celda de la segunda fila.</span><br>
+<span class="azul">&lt;td&gt;</span><span class="texto1">Celda2</span><span class="azul">&lt;/td&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí tenemos la segunda celda de la segunda fila.</span><br>
+<span class="azul">&lt;td&gt;</span><span class="texto1">Celda3</span><span class="azul">&lt;/td&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí tenemos la tercera celda de la tercera fila.</span><br>
+<span class="azul">&lt;/tr&gt;</span><span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí finalizamos la segunda fila<br>
+</span> <span class="azul">&lt;/table&gt;</span> <span class="texto1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aquí se finaliza la tabla</span><br>
+<span class="texto"> Como mejor lo vamos a ver es con el ejemplo resuelto:</span>
+<table border="2px" class="texto1">
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+    <td>Celda 3</td>
+  </tr>
+  <tr>
+    <td>Celda 4</td>
+    <td>Celda 5</td>
+    <td>Celda 6</td>
+  </tr>
+</table>
+<br>
+<span class="texto">Las partes de una tabla son:</span><br>
+<span class="texto1"><b>Encabezado</b> de tabla que se define con: </span><span class="azul"> &lt;thead&gt;</span><span class="texto1"> y se cierra con</span><span class="azul"> &lt;/thead&gt;</span><br>
+<span class="texto1"><b>Cuerpo</b> de tabla que se define con: </span><span class="azul"> &lt;tbody&gt;</span><span class="texto1"> y se cierra con</span><span class="azul"> &lt;/tbody&gt;</span><br>
+<span class="texto1"><b>Sumario </b>de tabla que se define con: </span><span class="azul"> &lt;tfoot&gt;</span><span class="texto1"> y se cierra con</span><span class="azul"> &lt;/tfoot&gt;</span><br>
+<span class="texto1"><b>Leyenda </b>de tabla que se define con: </span><span class="azul"> &lt;caption&gt;</span><span class="texto1"> y se cierra con</span><span class="azul"> &lt;/caption&gt;</span><br>
+<span class="texto">Los atributos de una tabla son:</span><br>
+<span class="texto1"><b>Border</b> de tabla que se define con: </span><span class="azul"> &lt;table border=dimensión del borde&gt </span><br>
+<span class="texto1"><b>Expansión </b> en columna hay que poner: </span><span class="azul"> rowspan </span><span class="texto1">en</span><span class="azul"> td y th</span><br>
+<span class="texto1"><b>Expansión </b>en fila hay que poner: </span><span class="azul"> colspan </span><span class="texto1">en</span><span class="azul"> td y th</span><br>
+<footer> <a href="pagina7.html" title="ir a la pagina anterior"><img src="anterior.svg" alt="ir a la página anterior" class="anterior"> <a href="index.html" title="ir al indice"><img src="indice.svg" alt="ir al indice" class="centro"> 
+  <!-- <a href="pagina9.html" title="ir a la pagina siguiente"><img src="siguiente.svg" alt="ir a la página siguiente" class="siguiente">--> 
+</footer>
+</body>
+</html>
