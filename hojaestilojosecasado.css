@@ -1,6 +1,11 @@
+body {
+	background-image:url(imagen.jpg);
+		
+}
 h1 {
 	text-align: center;
 	font-size: 3em;
+	
 }
 .subtitulo	{
 	font-size: 1.75em;
@@ -10,13 +15,19 @@ h1 {
 	font-size: 1.25em;
 	font-family: Verdana, Geneva, sans-serif;
 }
+.texto1 {
+	font-size: 1em;
+	font-family: Verdana, Geneva, sans-serif;
+}
 .azul	{
 	font-size: 1.25em;
 	font-family: "Courier New", Courier, monospace;
-	color: rgb(0,153,204);
+	color:rgb(0,120,255);
+
+
 }
 
 .subtipo{
 	font-size: 1.50em;
 	font-weight: bold;
-	
+	}

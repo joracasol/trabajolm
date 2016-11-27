@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Pagina 6</title>
+<meta charset="utf-8">
+<meta name="author" content="Jose Casado">
+<link type="text/css" rel="stylesheet" href="hojaestilojosecasado.css">
+</head>
+
+<body>
+<p>
+<h1>Hiperenlace</h1>
+</p>
+<ul>
+  <article>
+    <li class="subtitulo">Hiperenlace interno</li>
+    <span class="texto">Se realiza dentro de la misma página.<br>
+    Primero se realiza un identificador del elemento:</span><br>
+    <span class="azul">&lt;a id=elementoX&gt;Elemento X&lt;/elemento&gt;</span><br>
+    <span class="texto">A continuación se realiza un enlace a ese elemento y haciendo click nos lleva a esa parte de la página:</span><br>
+    <span class="azul">&lt;a href=#elementoX&gt;Elemento X&lt;/a&gt;</span><br>
+    <span class="texto">Para subir a la parte de arriba de la página se le da click y ya nos sube:</span><br>
+    <span class="azul">&lt;a href=#top&gt;Ir arriba&lt;/a&gt;</span></article>
+  <li class="subtitulo">Hiperenlace absoluto</li>
+  <span class="texto">Conduce a una ubicación externa al sitio en el que se encuentra el documento. La ubicación es en Internet, en este caso hay que empezar la referencia por http:// el nombre del dominio y algunas veces el nombre de la página. Si no se escribe el nombre de la página se cargará la página de inicio asociada al dominio.<br>
+  Se realiza así:</span><br>
+  <span class="azul"> &lt;a href="http://www.google.es""&gt;"Visita Google"&lt;/a&gt;</span>
+  <li class="subtitulo">Hiperenlace relativo</li>
+  <span class="texto">Conduce a un documento situado dentro del mismo sitio que el documento actual. Un sitio web es un conjunto de archivos y carpetas, relacionados entre sí, con un diseño similar o un objetivo común, estando todos ellos dentro de una misma carpeta, conocida como carpeta raíz del sitio.</span><br>
+  <ul>
+    <li class="texto">Si es en el mismo directorio (directorio raiz) sería así:</li>
+    <span class="azul"> &lt;a href= "pagina.html"&gt;"Enlace página en el directorio raiz"&lt;/a&gt;</span>
+    <li class="texto">Si es un subdirectorio (dentro del directorio raiz si no no funciona) sería así:</li>
+    <span class="azul"> &lt;a href= "subdirectorio/pagina.html"&gt;"Enlace página en el directorio raiz"&lt;/a&gt;</span>
+    <li class="texto">Si es un directorio anterior sería así:</li>
+    <span class="azul"> &lt;a href= "../pagina.html"&gt;"Enlace página en el directorio raiz"&lt;/a&gt;</span>
+  </ul>
+  <li class="subtitulo">Hiperenlaces en imagenes</li>
+  <span class="texto">Se pueden realizar hiperenlaces en imágenes para ello hay que poner esta estructura:</span><br>
+  <span class="azul"> &lt;a href= "http://www.google.es"&gt;&lt;img</a> src="imagen.jpg" alt="google" /&gt;&lt;/a&gt;</span><br>
+  <li class="subtitulo">Atributos de los hiperenlaces</li>
+  <span class="texto"><b>Target</b> Los valores de target mas habituales son:</span><br>
+  <ul>
+    <li class="texto"> _blank abre el documento vinculado en una ventana nueva del navegador. También se puede usar _new.<br>
+      Aquí les pongo la estructura:</li>
+    <span class="azul"> &lt;a href= "http://www.google.es" target=&quot;_blank&quot;&gt;"Enlace a google en pestaña nueva del navegador"&lt;/a&gt;<br>
+    &lt;a href= "http://www.google.es" target=-&quot;_new&quot;&gt;"Enlace a google en pestaña nueva del navegador"&lt;/a&gt; </span>
+    <li class="texto">_self es la opción predeterminada o por defecto. Abre el documento vinculado en el mismo marco o ventana que el vínculo.(Es como si no pusieramos nada)<br>
+      Aquí les pongo la estructura:</li>
+    <span class="azul"> &lt;a href= "http://www.google.es" target="_self"&gt;"Enlace a la página de google en la misma pestaña"&lt;/a&gt;</span>
+  </ul>
+  <span class="texto"><b>Title </b> sirve para ponerles enlace a nuestros links:</span><br>
+  <span class="azul"> &lt;a href= "http://www.google.es" title= &quot;Enlace google&quot;&gt;"Enlace a la página de google"&lt;/a&gt;</span>
+</ul>
+</ul>
+</article>
+</ul>
+<footer><a href="pagina5.html" title="pagina5" class="siguiente" ><img src="siguiente.svg" align="right"></a></footer>
+</body>
+</html>
